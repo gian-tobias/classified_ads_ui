@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8F8F8F;
+}
+body {
+  background-color: #303030;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 32px;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 40px 0 20px;
+}
+header li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.container {
+  width: 1270px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.navBar {
+  background-color: #373738;
+  color: #8F8F8F;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inputLabel {
+  display: block;
+}
+.btn {
+  margin: 20px 10px 15px 0;
+  background-color: #252247;
+  color: #fafafa;
+  border: 1.5px solid #fafafa;
+  border-radius: 3px;
+  padding: 3px 8px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #8ec1ef;
+}
+
+.hidden {
+  display: none;
+}
+
+.loginContainer {
+  background-color: #023557;
+  margin: auto;
+  margin-top: 10%;
+  height: 60%;
+  width: 40%;
+}
+
+.loginModal {
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+}
+
+.loginForm {
+  padding: 30px;
+  padding-left: 30%;
+}
+
+.formColumn {
+  display: block;
 }
